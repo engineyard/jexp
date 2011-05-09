@@ -6,3 +6,5 @@ Spec::Rake::SpecTask.new(:spec) do |t|
   t.spec_files = FileList['spec/**/*_spec.rb']
   t.libs << 'lib'
 end
+
+task :default => :spec
