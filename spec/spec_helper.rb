@@ -1,4 +1,4 @@
-Bundler.require_env :test
+Bundler.setup :test
 
 $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 

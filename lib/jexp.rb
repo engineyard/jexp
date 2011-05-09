@@ -2,8 +2,8 @@ require 'json'
 require 'forwardable'
 
 module JEXP
-  def self.jexp(*a)
-    return *a.map {|o| o.respond_to?(:to_jexp) ? o.to_jexp : JSON.parse(JSON.dump([o])).first }
+  def self.jexp(a)
+    return a.respond_to?(:to_jexp) ? a.to_jexp : JSON.parse(JSON.dump([a])).first
   end
 end
 

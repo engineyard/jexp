@@ -10,7 +10,7 @@ module JEXP
     end
 
     def to_hash
-      members.zip(values).inject({}) {|h,(k,v)| h.update(k => v) }
+      members.zip(values).inject({}) {|h,(k,v)| h.update(k.to_s => v) }
     end
   end
 end

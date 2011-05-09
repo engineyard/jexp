@@ -3,8 +3,8 @@ source :gemcutter
 gem 'json'
 
 group :test do
-  gem 'rspec'
-  gem 'ruby-debug'
+  gem 'rspec', '~>1.3.0'
+  #gem 'ruby-debug'
 end
 
 group :release do
